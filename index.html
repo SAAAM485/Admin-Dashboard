@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagel Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main_container">
+        <header class="header">
+            <form action="searchbar">
+                <button type="submit"><img src="./icons/magnify.svg" alt="search"></button>
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+            <div class="corner_info">
+                <button class="notifications"><img src="./icons/bell-ring-outline.svg" alt="notifications"></button>
+                <img id="corner_picture" src="./photo/bagel.jpeg" alt="Bagel Chen">
+                <div class="username">Bagel Chen</div>
+            </div>
+            <div class="account">
+                <img src="./photo/bagel.jpeg" alt="Bagel Chen">
+                <div id="greet">Hi there,</div>
+                <div id="current_user">Bagel Chen (@bagel)</div>
+            </div>
+            <div class="options">
+                <button id="new">New</button>
+                <button id="upload">Upload</button>
+                <button id="share">Share</button>
+            </div>
+        </header>
+        <div class="sidebar">
+            <ul class="logo">
+                <img src="./icons/cat.svg" alt="logo">
+                <li id="logo">Dashboard</li>
+            </ul>
+            <ul class="side1">
+                <img src="./icons/home-circle-outline.svg" alt="home">
+                <li id="home">Home</li>
+                <img src="./icons/card-account-details-outline.svg" alt="profile">
+                <li id="profile">Profile</li>
+                <img src="./icons/message-processing-outline.svg" alt="messages">
+                <li id="messages">Messages</li>
+                <img src="./icons/history.svg" alt="history">
+                <li id="history">History</li>
+                <img src="./icons/file-check-outline.svg" alt="tasks">
+                <li id="tasks">Tasks</li>
+                <img src="./icons/account-multiple-outline.svg" alt="communities">
+                <li id="communities">Communities</li>
+            </ul>
+            <ul class="side2">
+                <img src="./icons/cog-outline.svg" alt="settings">
+                <li id="settings">Settings</li>
+                <img src="./icons/help-circle-outline.svg" alt="support">
+                <li id="support">Support</li>
+                <img src="/icons/shield-lock-outline.svg" alt="privacy">
+                <li id="privacy">Privacy</li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <div class="your_projects">Your Progects
+                <div class="card" id="card1">
+                    <div class="project">The Cool One</div>
+                    <div class="description">It's never comforting to know that your fate depends on something as unpredictable as the popping of corn.</div>
+                    <div class="buttons">
+                        <button><img src="./icons/star-plus.svg" alt="save"></button>
+                        <button><img src="./icons/cards-heart.svg" alt="like"></button>
+                        <button><img src="./icons/share-variant.svg" alt="share"></button>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="project">EWWWW</div>
+                    <div class="description">He was disappointed when he found the beach to be so sandy and the sun so sunny.</div>
+                    <div class="buttons">
+                        <button><img src="./icons/star-plus.svg" alt="save"></button>
+                        <button><img src="./icons/cards-heart.svg" alt="like"></button>
+                        <button><img src="./icons/share-variant.svg" alt="share"></button>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="project">Brother What's That</div>
+                    <div class="description">Acres of almond trees lined the interstate highway which complimented the crazy driving nuts.</div>
+                    <div class="buttons">
+                        <button><img src="./icons/star-plus.svg" alt="save"></button>
+                        <button><img src="./icons/cards-heart.svg" alt="like"></button>
+                        <button><img src="./icons/share-variant.svg" alt="share"></button>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <div class="project">Boss</div>
+                    <div class="description">Everybody should read Chaucer to improve their everyday vocabulary.</div>
+                    <div class="buttons">
+                        <button><img src="./icons/star-plus.svg" alt="save"></button>
+                        <button><img src="./icons/cards-heart.svg" alt="like"></button>
+                        <button><img src="./icons/share-variant.svg" alt="share"></button>
+                    </div>
+                </div>
+                <div class="card" id="card5">
+                    <div class="project">Clay</div>
+                    <div class="description">He had unknowingly taken up sleepwalking as a nighttime hobby.</div>
+                    <div class="buttons">
+                        <button><img src="./icons/star-plus.svg" alt="save"></button>
+                        <button><img src="./icons/cards-heart.svg" alt="like"></button>
+                        <button><img src="./icons/share-variant.svg" alt="share"></button>
+                    </div>
+                </div>
+                <div class="card" id="card6">
+                    <div class="project">Home Sick</div>
+                    <div class="description">It must be easy to commit crimes as a snake because you don't have to worry about leaving fingerprints.</div>
+                    <div class="buttons">
+                        <button><img src="./icons/star-plus.svg" alt="save"></button>
+                        <button><img src="./icons/cards-heart.svg" alt="like"></button>
+                        <button><img src="./icons/share-variant.svg" alt="share"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements">Announcements
+                <div class="acard">Site Maintenance</div>
+                <div class="acard">Community Share Day</div>
+                <div class="acard">Update Privacy Policy</div>
+            </div>
+            <div class="trending">Trending
+                <div class="accounts"></div>
+                <div class="accounts"></div>
+                <div class="accounts"></div>
+                <div class="accounts"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

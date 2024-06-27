@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main_container {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 10fr;
+    height: 100vh;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 1px solid black;
+    display: grid;
+    grid-template: 1fr 2fr / 3fr 2fr;
+    padding-bottom: 0.3rem;
+}
+
+.header button {
+    border: none;
+    background-color: transparent;
+}
+
+form img {
+    filter: brightness(0) saturate(100%)
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    height: 2.5rem;
+    width: 80rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    background-color: #f4f7fb;
+    padding: 0 2rem;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+button img {
+    filter: brightness(0) saturate(100%)
+}
+
+form {
+    display: grid;
+    grid-template-columns: 4rem 4rem auto;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.corner_info {
+    display: grid;
+    grid-template-columns: 6rem 5rem max-content;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8rem;
+}
+
+#corner_picture {
+    filter: none;
+    border: none;
+    height: 4rem;
+    width: 3rem;
+    clip-path: circle();
+    align-self: center;
+    justify-self: center;
+}
+
+.account {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 9fr;
+    padding-left: 3rem;
+    letter-spacing: 0.05rem;
+}
+
+.account img {
+    filter: none;
+    border: none;
+    height: 8rem;
+    width: 6rem;
+    clip-path: circle();
+    align-self: center;
+    justify-self: flex-start;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#greet {
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: flex-end;
+    font-size: 1.3rem;
+}
+
+#current_user {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 2.5rem;
+}
+
+.options {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: flex-end;
+    column-gap: 1rem;
+    padding-right: 6rem;
+}
+
+.options button {
+    grid-row: 2 / 3;
+    color: #f4f7fb;
+    background-color: #709fc0;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    width: 7.5rem;
+    height: 3.5rem;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 2fr 7fr 3fr;
+    background-color: #709fc0;
+    justify-content: start;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #f4f7fb;
+    font-weight: 600;
+    gap: 0.2rem;
+    padding-top: 3rem;
+}
+
+.logo img {
+    filter: invert(90%) sepia(6%) saturate(2309%) hue-rotate(192deg) brightness(113%) contrast(96%);
+    height: 3rem;
+    width: 3rem;
+}
+
+.side1 * {
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: #f4f7fb;
+    gap: 0.5rem;
+}
+
+.side2 * {
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: #f4f7fb;
+    gap: 0.5rem;
+}
+
+#profile img {
+    height: 1.45rem;
+    width: 1.45rem;
+    margin: 0 0.55rem;
+}
+
+img {
+    height: 2rem;
+    width: 2rem;
+    filter: invert(90%) sepia(6%) saturate(2309%) hue-rotate(192deg) brightness(113%) contrast(96%);
+}
+
+.logo, .side1, .side2 {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    grid-template-rows: 3rem;
+    grid-auto-rows: 3rem;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-right: 5rem;
+}
+
+.main_content {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 1px solid black;
+    background-color: #f4f7fb;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+}
+
+.your_projects {
+    grid-row: 1 / 3;
+}
