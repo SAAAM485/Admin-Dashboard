@@ -12,15 +12,23 @@ body {
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
-    border: 1px solid black;
     display: grid;
     grid-template: 1fr 2fr / 3fr 2fr;
     padding-bottom: 0.3rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .header button {
     border: none;
     background-color: transparent;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    align-items: center;
+    padding-left: 3rem;
 }
 
 form img {
@@ -32,7 +40,7 @@ input {
     outline: none;
     border-radius: 1rem;
     height: 2.5rem;
-    width: 80rem;
+    width: 100%;
     font-size: 1.2rem;
     letter-spacing: 0.05rem;
     background-color: #f4f7fb;
@@ -45,13 +53,6 @@ input::placeholder {
 
 button img {
     filter: brightness(0) saturate(100%)
-}
-
-form {
-    display: grid;
-    grid-template-columns: 4rem 4rem auto;
-    align-items: center;
-    padding-left: 3rem;
 }
 
 .corner_info {
@@ -74,7 +75,7 @@ form {
 
 .account {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 9fr;
+    grid-template: 1fr 1fr / 1fr 7fr;
     padding-left: 3rem;
     letter-spacing: 0.05rem;
 }
@@ -122,7 +123,6 @@ form {
 
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
-    border: 1px solid black;
     display: grid;
     grid-template-rows: 2fr 7fr 3fr;
     background-color: #709fc0;
@@ -182,12 +182,99 @@ img {
 
 .main_content {
     grid-area: 2 / 2 / 3 / 3;
-    border: 1px solid black;
     background-color: #f4f7fb;
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
+    gap: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
 }
+
 
 .your_projects {
     grid-row: 1 / 3;
+}
+
+#your_projects {
+    position: relative;
+    bottom: 2%;
+    font-size: 1.3rem;
+    font-weight: 450;
+}
+
+.cards {
+    display: grid;
+    height: 100%;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    position: relative;
+    border-radius: 1.5rem;
+    background-color: white;
+    background: linear-gradient(to right, #fdbb74 3%, white 0%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    position: relative;
+    top: 0;
+    left: 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 440;
+}
+
+.description {
+    position: relative;
+    top: 0.8rem;
+    left: 2.3rem;
+    max-width: 85%;
+    word-wrap: break-word;
+}
+
+.buttons {
+    position: relative;
+    top: 75%;
+    left: 70%;
+}
+
+#announcements {
+    position: relative;
+    bottom: 2%;
+    font-size: 1.3rem;
+    font-weight: 450;
+}
+
+.acards {
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+    gap: 0.1rem;
+    height: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 3.5rem;
+}
+
+.acard :nth-child(1) {
+    border-top: 1px solid #709fc0;
+    padding-top: 1.5rem;
+}
+
+#acard1 {
+    border-top: none;
+    padding-top: 0;
+}
+
+.announcement {
+    position: relative;
+    top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 440;
+}
+
+.announcement_content {
+    position: relative;
+    top: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
 }
